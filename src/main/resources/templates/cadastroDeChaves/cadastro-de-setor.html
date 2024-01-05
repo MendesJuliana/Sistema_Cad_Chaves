@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--font final -->
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/cadastroDeChaves/cadastro-de-setor.css}">
+
+    
+    <!-- Outros links de estilo ou scripts que você possa ter -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+
+    <script src="/js/cadastroDeChaves/cadastro-de-setor.js" th:src="@{/js/cadastroDeChaves/cadastro-de-setor.js}" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-header-content">
+        <nav class="page-content top-nav-content">
+            <div class="itens-top-nav">
+                <ul>
+                    <a href="/page/cadastro-de-chaves" class="item-top-nav-active"> Cadastro de chaves</a>
+                    <a href="/page/painel_de_chaves" class="item-top-nav"> Painel de chaves</a>
+                    <a href="/page/historicoDeEmprestimos" class="item-top-nav">Histórico de empréstimos</a>
+                </ul>
+            </div>
+            <a href="/logout" class="perfil-top-nav" >
+                <span>Sair</span>
+                <i class='bx bx-log-in'></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="page-content main-conteudo">
+        <div class="container-seletores-de-cadastro">
+            <div class="seletores-de-cadastro">
+                <a href="cadastro-de-chaves">
+                    <div class="select-cad">
+                        <span>Chaves</span>
+                    </div>
+                </a>
+                <a href="cadastro-de-setor">
+                    <div class="select-cad-active">
+                        <span>Setor</span>
+                    </div>
+                </a>
+                <a href="cadastro-de-localizacao">
+                    <div class="select-cad">
+                        <span>Localização</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="table-list">
+
+        </div>
+
+        <div class="cad-setor-modal-content-group">
+            <div class="cad-setor-modal-content">
+                <div class="title-modal">
+                    <span>Crie um setor</span>
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <form id="cadastro-setor" action="" method="post">
+                    <div class="inputs-form">
+                        <div class="">
+                            <label for="nome-setor">Nome do setor</label>
+                            <input id="nome-setor" class="input-form" type="text" placeholder="Laboratório">
+                        </div>
+                    </div>
+
+                    <div class="btn-input">
+                        <button id="button-adicionar-setor" class="input-form btn-form-add" type="submit"> Adicionar Setor</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="page-content footer-conteudo">
+        
+            <ul class="footer-nav">
+                <li><a href="/page/cadastro-de-chaves"> Cadastro de chaves</a></li>
+                <li><a href="/page/painel_de_chaves"> Painel de chaves</a></li>
+                <li><a href="/page/historicoDeEmprestimos">Histórico de empréstimos</a></li>
+            </ul>
+            <span>
+                &copy; 2023 Desenvolvido de <i class='bx bxs-heart bx-tada' ></i> por 
+                <a href="https://www.linkedin.com/in/jaisoncode/" target="_blank">Carlos Jaison</a> & 
+                <a href="https://www.linkedin.com/in/juliana-mendes-754059226/" target="_blank">Juliana Mendes</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

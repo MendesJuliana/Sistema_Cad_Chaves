@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/login.css"> 
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h1 id="logo">SACEC</h1>
+        
+        <form id="loginForm" action="/login" method="post">
+            <div class="input-icon">
+                
+                <input class="input-login" type="text" id="login-username" name="username" placeholder="Usuário" required>
+            </div>
+            <div class="input-icon">
+                
+                <input class="input-login" type="password" id="login-password" name="password" placeholder="Senha" required>
+            </div>
+            <div>
+                <button class="btn-lg input-login" type="submit">Entrar</button>
+            </div>
+
+            
+        </form>
+    </div>
+
+    
+    </body>
+
+</html>

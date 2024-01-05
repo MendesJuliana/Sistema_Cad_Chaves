@@ -1,0 +1,95 @@
+:root {
+    --backgroud-blue: #5E72E4;
+    --background-gray: linear-gradient(180deg, rgba(242, 243, 248, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    --white-color: #FFFFFF;
+    --in-use-color: #FFAB00;
+    --update-color: #E7D000;
+    --confirm-color: #36B37E;
+    --cancel-color: #FF5630;
+    --font-primary: #3C4858;
+    --font-second: #8492A6;
+    --line-color: #EFF2F7;
+    --line-header: #A3A9D5;
+    --placeholder-font: #6D7175;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: var(--body-background);
+    /*background: linear-gradient(to bottom, #e7ecf0, #adc7e2);*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Faz com que o conteúdo ocupe toda a altura da tela */
+    background-color: #5E72E4;
+}
+
+#logo{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.container {
+   
+    background: #EFF2F7;
+    width: 37rem;
+    padding: 4rem 0;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-icon {
+    position: relative; 
+    margin: 1rem 0;  
+    
+}
+
+.input-login{
+    height: 3.7rem;
+    width: 25rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: 1px solid var(--line-color);
+    outline: none;
+}
+
+.bx {
+    position: absolute;
+    top: .9rem;
+    left: .5rem;
+    font-size: 1.9rem;
+}
+
+.btn-lg{
+    border: #36B37E 1px solid;
+    padding: 0; 
+    font-weight: 500;
+    background-color: #2C7BE5;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.btn-lg:hover{
+    transition: all 200ms ease;
+    opacity: .8;
+    cursor: pointer;
+}
+
+

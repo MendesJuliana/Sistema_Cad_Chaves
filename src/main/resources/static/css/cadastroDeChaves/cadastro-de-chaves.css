@@ -1,0 +1,104 @@
+:root {
+    --backgroud-blue: #5E72E4;
+    --background-gray: #F2F3F8;
+    --white-color: #FFFFFF;
+    --in-use-color: #FFAB00;
+    --update-color: #E7D000;
+    --confirm-color: #36B37E;
+    --cancel-color: #FF5630;
+    --font-primary: #3C4858;
+    --font-second: #8492A6;
+    --line-color: #EFF2F7;
+    --line-header: #A3A9D5;
+    --placeholder-font: #6D7175;
+    --border-input: #D9D9E4;
+}
+
+.cad-chave-modal-content-group {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cad-chave-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    width: 30.1rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title-modal {
+    padding: 1rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px var(--line-color);
+}
+
+.title-modal span {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.bx-x {
+    font-size: 2.2rem;
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.bx-x:hover {
+    transition: 100ms ease-in-out;
+    color: var(--white-color);
+    background: var(--cancel-color);
+}
+
+.inputs-form {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 20px 0px 20px;
+    font-weight: 500;
+
+}
+
+.input-form {
+    border: .1rem solid var(--border-input);
+    border-radius: .5rem;
+    height: 3.5rem;
+    width: 26rem;
+    padding-left: 1rem;
+    margin-top: .6rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    color: var(--placeholder-font);
+}
+
+.btn-form-add {
+    color: var(--white-color);
+    background: var(--backgroud-blue);
+    cursor: pointer;
+}
+
+.btn-form-add:hover {
+    opacity: .8;
+}
+
+.btn-input {
+    border-top: solid 1px var(--line-color);
+    padding: 1.2rem 2rem .6rem 2rem;
+}
